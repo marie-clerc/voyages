@@ -1,0 +1,100 @@
+/* font-face*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Titre Accueil et Description Agence */
+
+.main-info-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url(../images/voyages-main-bg.svg);
+  color: #fff;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #f4f3ef;
+  border-top: solid 1px #e5e2d4;
+}
+
+.about-us h1{
+  margin-top: -10%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+}
+
+.about-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Ancre Europe */
+
+.north-europ{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  background-image: url(../images/europe-bg.svg);
+  border-top: solid 1px #e5e2d4;
+}
+
+.north-europ h1{
+  margin-top: -14%;
+  text-transform: uppercase;
+  z-index: 1;
+  font-size: 170px;
+  letter-spacing: 2px;
+  opacity: .2;
+  text-align: center;
+}
+
+.europ-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -16%;
+}
+
+/* Ancre Amerique */
+
+.north-america{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  background-image: url(../images/amerique-bg.svg);
+}
+
+.north-america h1{
+  margin-top: -14%;
+  text-transform: uppercase;
+  z-index: 1;
+  font-size: 170px;
+  letter-spacing: 2px;
+  opacity: .2;
+  text-align: center;
+}
+
+.america-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -16%;
+}

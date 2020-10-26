@@ -1,11 +1,214 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>D'un Monde à l'autre</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/voyages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <section class="container">
+          <a class="navbar-brand" href="#"><img src="images/Logo.svg" alt="Logo header" width="90"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Continents
+                </a>
+                <section class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#europe">Europe du Nord</a>
+                  <a class="dropdown-item" href="#amerique">Amérique du Nord</a>
+                  <a class="dropdown-item" href="#asie">Asie</a>
+                </section>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                </a>
+                <section class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Guillaume</a>
+                  <a class="dropdown-item" href="#">Marie</a>
+                  <a class="dropdown-item" href="#">William</a>
+                </section>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </nav>
+    </header>
+
+    <!-- Infos page -->
+    <main>
+      <article>
+        <section class="main-info-section container-fluid">
+          <h1>Qui sommes-nous ?</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Ancre Présentation du groupe -->
+    <section class="about-us container-fluid">
+      <h1>Membres de l'équipe</h1>
+      <section class="about-card container">
+        <!-- William -->
+        <section class="card" style="width: 18rem;">
+          <img src="images/william-profile.svg" class="card-img-top img-fluid" alt="William KIES">
+          <section class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </section>
+        </section>
+
+        <!-- Marie -->
+        <section class="card" style="width: 20.2rem;">
+          <img src="images/marie-profile.svg" class="card-img-top img-fluid" alt="Marie CLERC">
+          <section class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </section>
+        </section>
+
+        <!-- Guillaume -->
+        <section class="card" style="width: 18rem;">
+          <img src="images/guillaume-profile.svg" class="card-img-top img-fluid" alt="Gullaume GRAC">
+          <section class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- Ancre Europe du Nord -->
+    <section class="north-europ container-fluid" id="europe">
+      <h1>Europe du Nord</h1>
+      <section class="europ-info container">
+        <!-- Svalbard -->
+        <section class="card" style="width: 18rem;">
+          <img src="images/svalbard-logo.svg" class="card-img-top" alt="Svalbard">
+          <section class="card-body">
+            <h5 class="card-title">Svalbard</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Je veut partir !</a>
+          </section>
+        </section>
+        <!-- Danemark -->
+        <section class="card" style="width: 18rem;">
+          <img src="images/danemark-logo.svg" class="card-img-top" alt="Svalbard">
+          <section class="card-body">
+            <h5 class="card-title">Danemark</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Je veut partir !</a>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- Ancre Amérique du Nord -->
+    <section class="north-america container-fluid" id="amerique">
+      <h1>Amérique du Nord</h1>
+      <section class="america-info container">
+        <!-- Canada -->
+        <section class="card mb-3" style="max-width: 540px;">
+          <section class="row no-gutters">
+            <section class="col-md-4">
+              <img src="images/svaltbard-logo.svg" class="card-img" alt="svaltbard">
+            </section>
+            <section class="col-md-8">
+              <section class="card-body">
+                <h5 class="card-title">Canada</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">Je veux partir !</a>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- Ancre Asie -->
+    <section class="north-europ container-fluid" id="asie">
+      <h1>Asie</h1>
+      <section class="europ-info container">
+        <!-- Svaltbard -->
+        <section class="card mb-3" style="max-width: 540px;">
+          <section class="row no-gutters">
+            <section class="col-md-4">
+              <img src="images/svaltbard-logo.svg" class="card-img" alt="svaltbard">
+            </section>
+            <section class="col-md-8">
+              <section class="card-body">
+                <h5 class="card-title">Japon</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">Je veux partir !</a>
+              </section>
+            </section>
+          </section>
+        </section>
+        <!-- Danemark -->
+        <section class="card mb-3" style="max-width: 540px;">
+          <section class="row no-gutters">
+            <section class="col-md-4">
+              <img src="images/danemark-logo.svg" class="card-img" alt="Danemark">
+            </section>
+            <section class="col-md-8">
+              <section class="card-body">
+                <h5 class="card-title">Corée</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">Je veux partir !</a>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
 </html>
