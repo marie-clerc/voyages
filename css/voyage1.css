@@ -1,0 +1,139 @@
+@font-face {
+  font-family: HVD_Bodedo;
+  src: url(../font/HVD_Bodedo.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Main Voyage 1 */
+
+#accueil{
+  height: 87.5vh;
+  border-bottom: solid 2px black;
+}
+
+#ban-ours{
+  height: 100%;
+  width: 100%;
+}
+
+#intro{
+  color: black;
+  border-bottom: solid 2px black;
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 1%;
+}
+
+#intro-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@keyframes mymove{
+  from {left: 0%;}
+  to {left: 85%;}
+}
+
+#iceberg{
+  padding-top: -3%;
+  height: 30%;
+  margin-left: -85%;
+  animation-timing-function: linear 25s;
+  position: relative;
+  animation: mymove 25s infinite;
+}
+
+#sommaire{
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  font-size: 18px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.sommaire{
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  text-align: center;
+  font-family: HVD_Bodedo,cursive;
+}
+
+li a{
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+li a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.span-titres{
+  color: #6dd9e2;
+  text-shadow: 2px 3px 3px black;
+}
+.span-text{
+  font-weight: bold;
+  color: #408097;
+}
+
+#quand-partir{
+  padding-left: 1%;
+  color: black;
+  padding-top: 1%;
+  height: 100vh;
+  border-bottom: 2px black solid;
+}
+
+#quand-text{
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-right: 18%;
+  padding-left: 18%;
+}
+
+#aurore{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+#quand-lien{
+  text-align: center;
+}
+
+i{
+  font-size: 26px;
+}
+
+#transport-avion{
+  height: 100vh;
+}
