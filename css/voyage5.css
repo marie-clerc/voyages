@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+/*Page Montréal*/
+#mainmontreal {
+    cursor: context-menu;
+}
+#montreal {
+    background-image: url("../images/montreal/montrealBackground.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#itineraire {
+    font-family: courier;
+    height: 150vh;
+    color: rgb(240, 240, 240);
+    display: grid;
+    place-items: center;
+}
+
+#itineraire h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 119px;
+}
+.guirlande {
+    display: flex;
+    background-image: url("../images/montreal/montrealBackground.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+    height: 10vh;
+    width: 100%;
+}
+
+.guirlande img {
+    height: 10vh;
+}
+
+.section {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    text-align: justify;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+article {
+    width: 80%;
+}
+.flex {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+}
+.flex p {
+    padding-left: 1em;
+}
+b {
+    color: #ff913d;
+}
+
+#pres p::first-letter, #places p::first-letter {
+    color: #BF3604;
+    margin-right : 5px;
+    font-size: 3em;
+    font-family: 'Fredericka the Great', cursive;
+    line-height: 0;
+}
+.surlignage {
+    line-height: 0;
+    box-shadow: inset 0px -8px #ff913d;
+}
+
+#pres a {
+    color: currentColor;
+    text-decoration: underline;
+    transition: 0.2s ease-in;
+}
+#pres a:hover {
+    font-weight: bolder;
+    box-shadow: inset 0px -8px #ff913d; 
+}
+
+.titres {
+    width: 90%;
+}
+
+.titres h2 {
+    display: inline;
+    font-family: courier;
+    margin-bottom: 2em;
+}
+.titres h5 {
+    display: inline;
+}
+.titres a {
+    color: currentColor;
+    transition: 0.1s ease-in;
+}
+.titres a:hover {
+    text-decoration: none;
+    box-shadow: inset 0px -11px #ff913d; 
+}
+
+#places h3 {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: right;
+}
+
+#places img {
+    max-width: 100%;
+}
+#places p {
+    margin-top: 2em;
+    width: 80%;
+}
+
+
+
