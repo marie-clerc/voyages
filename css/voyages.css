@@ -17,6 +17,7 @@ html{
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   height: 100vh;
   background-image: url(../images/voyages-main-bg.svg);
   color: #fff;
@@ -25,6 +26,13 @@ html{
 .main-info-section h1{
   color: #fff;
   text-transform: uppercase;
+  margin-top: -5%;
+}
+
+.main-info-section p{
+  margin-top: 3%;
+  width: 60%;
+  text-align: center;
 }
 
 .about-us{
@@ -38,7 +46,6 @@ html{
 }
 
 .about-us h1{
-  margin-top: -10%;
   margin-bottom: 5%;
   text-transform: uppercase;
 }
@@ -61,7 +68,7 @@ html{
 }
 
 .north-europ h1{
-  margin-top: -14%;
+  margin-top: -10%;
   text-transform: uppercase;
   z-index: 1;
   font-size: 170px;
@@ -117,7 +124,7 @@ html{
 }
 
 .asia h1{
-  margin-top: -14%;
+  margin-top: -10%;
   text-transform: uppercase;
   z-index: 1;
   font-size: 170px;
@@ -188,6 +195,7 @@ html{
 .footer-a:hover, .footer-a:focus, .btn:hover, .btn:focus, .footer-button:hover, .footer-button:focus{
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover{
