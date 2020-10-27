@@ -27,7 +27,7 @@ html{
 
 #intro{
   color: black;
-  border-bottom: solid 2px black;
+  border-bottom: solid 1px black;
   height: 100vh;
   text-align: center;
   font-weight: bold;
@@ -43,13 +43,13 @@ html{
 
 @keyframes mymove{
   from {left: 0%;}
-  to {left: 85%;}
+  to {left: 90%;}
 }
 
 #iceberg{
   padding-top: -3%;
   height: 30%;
-  margin-left: -85%;
+  margin-left: -90%;
   animation-timing-function: linear 25s;
   position: relative;
   animation: mymove 25s infinite;
@@ -103,12 +103,17 @@ a:hover{
   color: #408097;
 }
 
-#quand-partir{
+.span-text2{
+  font-weight: bold;
+}
+
+.section-vh{
+  padding-right: 1%;
   padding-left: 1%;
   color: black;
   padding-top: 1%;
   height: 100vh;
-  border-bottom: 2px black solid;
+  border-bottom: 1px black solid;
 }
 
 #quand-text{
@@ -131,9 +136,116 @@ a:hover{
 }
 
 i{
+  color : #408097;
   font-size: 26px;
 }
 
-#transport-avion{
-  height: 100vh;
+#map{
+  width: 600px;
+  height: 450px;
+}
+
+#avion-contenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 9%;
+}
+
+#article-regles{
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  box-shadow: 0px 0px 7px 3px #408097 inset ;
+}
+
+#warning{
+  margin-top: 2%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#visite-svalbard{
+  padding-right: 1%;
+  padding-left: 1%;
+  color: black;
+  padding-top: 1%;
+  height: 450vh;
+  border-bottom: 1px black solid;
+}
+
+#visite-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 2%;
+}
+
+#kayak{
+  padding-left: 5%;
+  width: 40%;
+}
+
+#visite-1-text{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#visite-2{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+#ours-pic{
+  margin-top: 2%;
+}
+
+#visite-2-text{
+  padding-top: 2%;
+}
+
+#visite-3{
+  margin-top: 10%;
+}
+
+.visite-3-text{
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.guides{
+  width: 50%;
+}
+
+#que-faire{
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 5px;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  box-shadow: 0px 0px 7px 3px #408097 inset ;
+}
+
+#global-seed{
+  width: 40%;
 }
