@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url(../images/japan-bg.svg);
+  background-attachment: fixed;
+}
+
+.main-japan-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.display-4{
+  text-transform: uppercase;
+}
+
+/* Infos de la page */
+
+.lieux-info-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../images/lieux-bg.svg);
+  border-top: solid 3px #e5e2d4;
+}
+
+.list-unstyled img{
+  width: 30%;
+}
+
+.list-unstyled h5{
+  font-weight: bold;
+}
+
+.lieux-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+/* Ancre organisation */
+
+.organisation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #f4f3ef;
+  border-top: solid 3px #e5e2d4;
+}
