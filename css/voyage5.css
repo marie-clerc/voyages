@@ -8,6 +8,8 @@ html {
     overflow-x: hidden;
 }
 /*Page Montréal*/
+
+/*partie du haut avec le background*/
 #mainmontreal {
     cursor: context-menu;
 }
@@ -30,6 +32,9 @@ html {
     font-family: 'Fredericka the Great', cursive;
     font-size: 119px;
 }
+
+
+/*guirlande de fleurs*/
 .guirlande {
     display: flex;
     background-image: url("../images/montreal/montrealBackground.jpg");
@@ -43,7 +48,7 @@ html {
 .guirlande img {
     height: 10vh;
 }
-
+/*Partie conenu avec les section, articles, ...*/
 .section {
     background-color: white;
     display: grid;
@@ -66,8 +71,7 @@ article {
 b {
     color: #ff913d;
 }
-
-#pres p::first-letter, #places p::first-letter {
+#pres p::first-letter, #places p::first-letter, #food p::first-letter {
     color: #BF3604;
     margin-right : 5px;
     font-size: 3em;
@@ -78,21 +82,17 @@ b {
     line-height: 0;
     box-shadow: inset 0px -8px #ff913d;
 }
-
-#pres a {
+#pres a, #places a, #food a {
     color: currentColor;
     text-decoration: underline;
-    transition: 0.2s ease-in;
+    transition: 0.4s ease;
 }
-#pres a:hover {
-    font-weight: bolder;
-    box-shadow: inset 0px -8px #ff913d; 
+#pres a:hover, #places a:hover, #food a:hover {
+    box-shadow: inset 0px -1em #ff913d; 
 }
-
 .titres {
     width: 90%;
 }
-
 .titres h2 {
     display: inline;
     font-family: courier;
@@ -101,28 +101,17 @@ b {
 .titres h5 {
     display: inline;
 }
-.titres a {
-    color: currentColor;
-    transition: 0.1s ease-in;
-}
-.titres a:hover {
-    text-decoration: none;
-    box-shadow: inset 0px -11px #ff913d; 
-}
 
-#places h3 {
+#places h3, #food h3 {
     margin-bottom: 2em;
     margin-top: 2em;
     text-align: right;
 }
-
-#places img {
+#places img, #food img {
     max-width: 100%;
+    padding-bottom: 2px;
 }
-#places p {
+#places p, #food p {
     margin-top: 2em;
     width: 80%;
 }
-
-
-
