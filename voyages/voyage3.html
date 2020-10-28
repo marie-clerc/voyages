@@ -16,30 +16,30 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <section class="container">
-          <a class="navbar-brand" href="#"><img src="../images/Logo.svg" alt="Logo header" width="90"></a>
+          <a class="navbar-brand" href="../voyages.html"><img src="../images/Logo.svg" alt="Logo header" width="90"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <section class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item active"><a class="nav-link" href="../voyages.html">Home<span class="sr-only">(current)</span></a></li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" class="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Continents
                 </a>
-                <section class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <section class="dropdown-menu">
                   <a class="dropdown-item" href="../voyages.html#europe">Europe du Nord</a>
                   <a class="dropdown-item" href="../voyages.html#amerique">Amérique du Nord</a>
                   <a class="dropdown-item" href="../voyages.html#asie">Asie</a>
                 </section>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" class="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                   </svg>
                 </a>
-                <section class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <section class="dropdown-menu">
                   <a class="dropdown-item" href="../voyages.html#europe">Guillaume</a>
                   <a class="dropdown-item" href="../voyages.html#amerique">Marie</a>
                   <a class="dropdown-item" href="../voyages.html#asie">William</a>
@@ -68,7 +68,7 @@
 
     <!-- Ancre Lieux cultes -->
     <section class="lieux-info-section container-fluid" id="lieux">
-      <h1>Lieux Cultes Du Japon</h1>
+      <h1>Lieux Cultes Du <span>Japon</span></h1>
       <section class="lieux-container container-fluid">
         <!-- Lieux cultes a gauche -->
         <ul class="list-unstyled">
@@ -131,9 +131,58 @@
       </section>
     </section>
 
+    <!-- Ancre Exemple -->
+    <section class="exemple container-fluid">
+      <h1>Quelques exemples <span>en images du Japon</span></h1>
+      <section class="exemple-main-info container">
+        <div class="container">
+        		<div class="carousel slide" id="main-carousel" data-ride="carousel">
+        			<ol class="carousel-indicators">
+        				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+        				<li data-target="#main-carousel" data-slide-to="1"></li>
+        				<li data-target="#main-carousel" data-slide-to="2"></li>
+        				<li data-target="#main-carousel" data-slide-to="3"></li>
+                <li data-target="#main-carousel" data-slide-to="4"></li>
+                <li data-target="#main-carousel" data-slide-to="5"></li>
+        			</ol>
+
+        			<section class="carousel-inner">
+        				<section class="carousel-item active">
+        					<img class="d-block img-fluid" src="../images/carousel-exemple1.svg" alt="">
+        				</section>
+        				<section class="carousel-item">
+        					<img class="d-block img-fluid" src="../images/carousel-exemple2.svg" alt="">
+        				</section>
+        				<section class="carousel-item">
+        					<img class="d-block img-fluid" src="../images/carousel-exemple3.svg" alt="">
+        				</section>
+        				<section class="carousel-item">
+        					<img class="d-block img-fluid" src="../images/carousel-exemple4.svg" alt="">
+        				</section>
+                <section class="carousel-item">
+        					<img class="d-block img-fluid" src="../images/carousel-exemple5.svg" alt="">
+        				</section>
+                <section class="carousel-item">
+        					<img class="d-block img-fluid" src="../images/carousel-exemple6.svg" alt="">
+        				</section>
+        			</section>
+
+        			<a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
+        				<span class="carousel-control-prev-icon"></span>
+        				<span class="sr-only" aria-hidden="true">Prev</span>
+        			</a>
+        			<a href="#main-carousel" class="carousel-control-next" data-slide="next">
+        				<span class="carousel-control-next-icon"></span>
+        				<span class="sr-only" aria-hidden="true">Next</span>
+        			</a>
+        		</section>
+        	</section>
+      </section>
+    </section>
+
     <!-- Ancre organisation -->
     <section class="organisation container-fluid">
-      <h1>L'organisation du voyage</h1>
+      <h1>L'organisation du <span>voyage</span></h1>
       <p>Avant de vous lancer à la découverte du Japon, cela ne s'improvise pas.
       Visa, budget, déplacements, logements nous allons voir tout cela en détails
       afin de se préparer du mieux possible.</p>
@@ -141,71 +190,292 @@
 
     <!-- Ancre envie -->
     <section class="envie container-fluid">
-      <h1>Définir ses envies</h1>
+      <h1>Définir ses <span>envies</span></h1>
       <section class="envie-info container">
         <p>La première phase de la préparation de votre voyage au Japon consistera
         à faire le point sur vos envies. Êtes-vous plutôt ville, montagne ou un peu
         des deux ? Souhaitez-vous découvrir les lieux les plus touristiques ou sortir
         des sentiers battus ? Avez-vous envie de découvrir les îles japonaises ou une ville en particulier ?</p>
       </section>
+      <section class="envie-main-info container">
+        <p>En matière de mode de voyage, plusieurs alternatives s’offrent à vous :</p>
+        <ul>
+          <li><b>Opter pour un circuit organisé</b> au cours duquel vous pourrez découvrir
+          ou redécouvrir le Japon en compagnie d’un guide spécialiste de la culture japonaise.
+          Dans ce cas, vous pourrez bénéficier d’un voyage clé en main (vol, logement, visites
+          planifiées en fonction du thème choisi) et parcourez le Japon en compagnie d’un groupe de passionnés.</li>
+          <li><b>Opter pour un circuit sur mesure</b> qui vous offrira une totale liberté.
+          Vous pourrez l’organiser seul ou avec l’aide de l’un de nos spécialistes pour
+          qu'il réponde exactement à vos envies et besoins.</li>
+          <li><b>Opter pour un circuit en liberté</b> en choisissant un des package créés par
+          nos conseillers voyages comprenant le vol, les hébergements et les transports.
+          C'est la solution idéale et économique pour un premier voyage au Japon ou pour
+          découvrir en profondeur un thème ou une région que vous aimez  en toute sérénité !</li>
+          <li><b>Opter pour un voyage en toute autonomie</b> et créer vous-même l'itinéraire de votre séjour.
+          Pour répondre à vos envies de découverte, vous pourrez alors par exemple intégrer dans votre
+          organisation une de nos activités privés ou en groupe dans différentes villes de Japon.</li>
+        </ul>
+      </section>
     </section>
 
+    <!-- Ancre Déplacements -->
+    <section class="move container-fluid">
+      <h1>Préparer ses <span>déplacements au Japon</span></h1>
+      <section class="move-info container">
+        <p>Le coût et les modes de transport sont généralement prévus dans nos circuits
+        mais si vous organisez votre voyage de A à Z et prévoyez de changer de ville, vous devrez bien planifier vos déplacements.</p>
+      </section>
+      <section class="move-main-info container">
+        <p>Pour prendre le train et passer de ville en ville, la référence est le JR Pass qui vous permet de voyager en illimité d’un bout
+        à l’autre du pays sur le réseau JR (les tarifs varient quotidiennement en fonction du taux du yen).Pour les transports en communs de
+        type bus ou métro, les cartes de transports prépayées Pasmo ou Suica vous seront également utiles pour vous déplacements en toute simplicité.
+        Pour gagner du temps, vous pouvez les commander en ligne avant votre départ. Si vous préférez vous déplacer en voiture, vous pouvez louer un
+        véhicule en avance. C'est une solution à privilégier lorsque l’on veut découvrir la campagne japonaise et voyager à son rythme en toute autonomie.</p>
+      </section>
+    </section>
 
+    <!-- Ancre Hébergements -->
+    <section class="hebergement container-fluid">
+      <h1>Comment <span>se loger au Japon ?</span></h1>
+      <section class="hebergement-info container">
+        <p>Le Japon offre une grande variété d’hébergements, à choisir en fonction de vos préférences :</p>
+      </section>
+      <section class="hebergement-main-info container">
+        <ul>
+          <li>Les maisons, parfaites pour vivre à la japonaise et s’imprégner de la culture.
+          Vivre le Japon vous propose la location de maisons (jusqu’à 8 personnes) au cœur de Tokyo,
+          Kyoto, Kanazawa et Takayama. Sur place, bénéficiez de l’accompagnement d’un Travel Angel,
+          qui répondra à toutes vos questions sur le quartier, vous donnera des bonnes adresses et
+          des conseils pratiques.</li>
+          <li>Les hôtels classiques, de type occidental;</li>
+          <li>Les ryokan, auberges japonaises typiques, à privilégier en campagne ou dans les villes de petite taille;</li>
+          <li>Les auberges de jeunesse, pour réaliser un maximum d’économies.</li>
+        </ul>
+      </section>
+    </section>
 
+    <!-- Ancre admins -->
+    <section class="admins container-fluid">
+      <h1><span>Formalités administratives</span> pour voyager au Japon</h1>
+      <section class="admins-info container">
+        <p>Il y a très peu de formalités à effectuer lorsque l’on prépare son voyage au Japon.
+        Quelles sont les procédures administratives à faire avant de partir au Japon ?</p>
+      </section>
+      <section class="admins-main-info container">
+        <ul>
+          <li><b>Visa</b></li>
+        </ul>
+          <p>Les ressortissants français n’ont pas besoin de visa pour se rendre au Japon
+          dans le cadre d’un voyage touristique. Vous pouvez séjourner jusqu’à 90 jours sur le
+          territoire japonais sans autre document justificatif que votre passeport. Tous les types
+          de passeport sont acceptés, qu’ils soient biométriques ou non. Ils doivent simplement être
+          valables jusqu’à la date de retour en France.</p>
+          <ul>
+            <li><b>Santé</b></li>
+          </ul>
+          <p>Les frais de santé au Japon sont relativement coûteux. Il est préférable de se prémunir en
+          souscrivant une assurance santé adaptée avant le départ. Avant toute souscription, vérifiez tout
+          de même si votre carte de crédit vous donne droit à une quelconque couverture. Vous pourriez ainsi
+          éviter des frais inutiles. N’oubliez pas non plus vos éventuels traitements en cours. Amenez les médicaments
+          dont vous avez besoin (vous risquez en effet d’avoir des difficultés à trouver les bonnes références sur place)
+          ainsi que la ou les ordonnances nécessaires.</p>
+          <ul>
+            <li><b>Banque et échanger des yens</b></li>
+          </ul>
+          <p>Pensez à relever le plafond de retrait de votre carte bleue avant votre départ, s’il n’est pas suffisant. Sur place,
+          la majorité des transactions se font en effet en liquide. Nous vous conseillons également d'acheter des yens avant votre
+          départ pour arriver au Japon en toute sérénité ! Pour ce faire, il existe des bureaux de change et la plupart des banques
+          peuvent également vous vendre des yens, la devise japonaise.</p>
+          <ul>
+            <li><b>Conduire au Japon</b></li>
+          </ul>
+          <p>Si vous souhaitez louer une voiture lors de votre séjour au Japon et prendre le volant, il vous faudra faire traduire
+          votre permis de conduire au préalable. En effet, les permis de conduire internationaux ne sont pas suffisant au Japon et il
+          faudra pour de nombreux voyageurs, comme c'est le cas des personnes possédant un permis français, faire traduire son permis par la JAF,
+          <i>Japan Automobile Federation</i>, pour pouvoir prendre la route au Japon. La <span>traduction du permis de conduire</span> est donc une
+          formalité incontournable avant votre départ.</p>
+      </section>
+    </section>
 
+    <!-- Ancre partir -->
+    <section class="partir container-fluid">
+      <h1>Quand <span>partir au Japon ?</span></h1>
+      <section class="partir-info container">
+        <p>Chaque saison possède ses avantages et ses inconvénients, tout dépend de l’expérience que vous souhaitez avoir du Japon.</p>
+      </section>
+      <section class="partir-main-info container">
+        <ul>
+          <li>Le printemps en très populaire en raison des cerisiers en fleurs, qui offrent un spectacle époustouflant, et de ses multiples fêtes
+          et festivals mais est aussi la période la plus onéreuse.</li>
+          <li>L’été est particulièrement chaud et humide mais est aussi prisé pour ses nombreux évènements culturels et sa gastronomie particulière.</li>
+          <li>L’automne vous permettra quant à lui de découvrir un Japon aux couleurs flamboyantes et uniques, mais aussi de profiter d’un climat doux.
+          Attention toutefois à bien choisir ses dates pour éviter la période des typhons.</li>
+          <li>L’hiver sera enfin idéal pour observer le Mont Fuji sous son plus beau jour, partir à moindre frais et profiter des lieux touristiques en toute tranquillité.</li>
+        </ul>
+      </section>
+    </section>
 
+    <!-- Ancre budget -->
+    <section class="budget container-fluid">
+      <h1>Quel <span>budget pour partir au Japon ?</span></h1>
+      <section class="budget-main-info container">
+        <p>Le budget est une composante importante dans la préparation du voyage au Japon. À l’heure actuelle, il faut compter environ 2 000 € par personne,
+        billets d’avion aller-retour compris. Cette estimation peut varier en fonction de plusieurs facteurs et notamment la période de départ, la durée du séjour,
+        le type de logement choisi, des déplacements ou des visites prévues.</p>
+        <p>On entend souvent dire que le Japon est une destination coûteuse mais cela n’est pas totalement vrai. Comme pour d’autres voyages il est possible de
+        réduire les coûts, en commençant par réserver ses billets d’avion le plus en avance possible (comptez 6 à 7 mois avant la date de départ prévue).
+        Certaines saisons sont également moins coûteuses. Autre remarque, le coût de la nourriture est très raisonnable. En étant économe, vous pouvez manger
+        pour 20 à 25 € par jour en moyenne.</p>
+        <p>Vous pourrez aussi réduire vos coûts en pensant à changer votre argent avant le départ. Prévoyez une somme relativement importante car sur place
+        tout retrait occasionnera des frais importants qui pourraient plomber le budget loisir fixé pour vote voyage au Japon. </p>
+      </section>
+    </section>
 
+    <!-- Ancre Formulaire -->
+    <section class="contact-form container-fluid">
+      <h1>En route pour <span>l'Aventure !</span></h1>
+      <section class="contact-form-container container">
+        <div class="frame">
+          <img src="../images/william-profile.svg" alt="William Kies">
+        </div>
+        <div class="container formulaire">
+          <div class=" text-center mt-5 ">
+            <h1>Je suis <span>Prêt !</span></h1>
+          </div>
+          <div class="row ">
+            <div class="col-lg-7 mx-auto">
+              <div class="card mt-2 mx-auto p-4 bg-light">
+                <div class="card-body bg-light">
+                  <div class="container">
+                    <form action="#" id="contact-form" role="form">
+                      <div class="controls">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="form_name">Prénom *</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Entrer votre prénom *" required="required" data-error="Le prénom est obligatoire !">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="form_lastname">Nom *</label>
+                              <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Entrer votre nom *" required="required" data-error="Le nom est obligatoire !">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Entrer votre email *" required="required" data-error="Un Email valide est obligatoire !">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="form_need">Que choisissez-vous ? *</label>
+                              <select id="form_need" name="need" class="form-control" required="required" data-error="Selectionner votre circuit">
+                                <option value="" selected disabled>-- Choisir --</option>
+                                <option>Circuit Organisé</option>
+                                <option>Circuit sur mesure</option>
+                                <option>Circuit en liberté</option>
+                                <option>Circuit économique</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="form_message">Message *</label>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Présenter en quelques lignes le parcours que vous souhaitez organisé : lieux à visiter, le budget, vos dates de disponibilités ect..." rows="4" required="required" data-error="Ecrivez un message !"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Envoyer le message">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </section>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Footer -->
+    <footer class="new_footer_area bg-dark">
+      <section class="new_footer_top">
+        <section class="container">
+          <section class="row">
+            <section class="col-lg-3 col-md-6">
+              <section class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18">Newsletter</h3>
+                <p>Ne loupez plus aucune mise à jours et améliorations de la pages !</p>
+                <form action="#" class="f_subscribe_two mailchimp" method="post">
+                  <input type="text" name="EMAIL" class="form-control memail" placeholder="Email" required>
+                  <button class="btn btn_get btn_get_two footer-button" type="submit">S'abonner</button>
+                  <p class="mchimp-errmessage" style="display: none;"></p>
+                  <p class="mchimp-sucmessage" style="display: none;"></p>
+                </form>
+              </section>
+            </section>
+            <section class="col-lg-3 col-md-6">
+              <section class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18">Navigation</h3>
+                <ul class="list-unstyled f_list">
+                  <li><a class="footer-a" href="../voyages.html">Accueil</a></li>
+                  <li><a class="footer-a" href="../voyages.html#europe">Europe Du Nord</a></li>
+                  <li><a class="footer-a" href="../voyages.html#amerique">Amérique Du Nord</a></li>
+                  <li><a class="footer-a" href="../voyages.html#asie">Asie</a></li>
+                </ul>
+              </section>
+            </section>
+            <section class="col-lg-3 col-md-6">
+              <section class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18">Aides</h3>
+                <ul class="list-unstyled f_list">
+                  <li><a class="footer-a">FAQ</a></li>
+                  <li><a class="footer-a">Termes &amp; conditions</a></li>
+                  <li><a class="footer-a">Reportages</a></li>
+                  <li><a class="footer-a">Documentations</a></li>
+                  <li><a class="footer-a">Droits D'Utilisations</a></li>
+                  <li><a class="footer-a">Privé</a></li>
+                </ul>
+              </section>
+            </section>
+            <section class="col-lg-3 col-md-6">
+              <section class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18">Nous retrouvez</h3>
+                <section class="f_social_icon">
+                  <a class="fab fa-facebook footer-a"></a>
+                  <a class="fab fa-twitter footer-a"></a>
+                  <a class="fab fa-linkedin footer-a"></a>
+                  <a class="fab fa-github footer-a"></a>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="footer_bg">
+          <section class="footer_bg_one"></section>
+          <section class="footer_bg_two"></section>
+        </section>
+      </section>
+      <section class="footer_bottom">
+        <section class="container">
+          <section class="row align-items-center">
+            <section class="col-lg-6 col-sm-7">
+              <p class="mb-0 f_400">© D'Un Monde à L'Autre. 2020 All rights reserved.</p>
+            </section>
+            <section class="col-lg-6 col-sm-5 text-right">
+              <p>Made <i class="icon_heart"></i> by <a>D'Un Monde à L'Autre</a></p>
+            </section>
+          </section>
+        </section>
+      </section>
+    </footer>
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
