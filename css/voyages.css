@@ -1,4 +1,4 @@
-/* font-face*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
 *{
   margin: 0;
@@ -8,6 +8,11 @@
 
 html{
   scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Josefin Slab', serif;
+  font-size: 18px;
 }
 
 /* Titre Accueil et Description Agence */
@@ -46,7 +51,6 @@ html{
 }
 
 .about-us h1{
-  margin-bottom: 5%;
   text-transform: uppercase;
 }
 
@@ -328,11 +332,6 @@ html{
   position: absolute;
   -webkit-animation: myfirst 30s linear infinite;
   animation: myfirst 30s linear infinite;
-}
-
-#name{
-  color: #fff;
-  cursor: pointer;
 }
 
 @-moz-keyframes myfirst{
