@@ -221,6 +221,11 @@ b {
     margin-top: 2em;
     width: 80%;
 }
+/*iframe place d'armes*/
+#plcarmes iframe {
+  width: 100%;
+  height: 90vh;
+}
 
 /*css formulaire*/
 #formulaire {
