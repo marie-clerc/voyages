@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+ background-color: white;
+ color : black;
+}
+
+/* Main */
+
+.img-carou{
+  width: 55%;
+  display: block;
+  margin: auto;
+
+}
+
+#carousel-example-generic {
+	height: 70vh;
+
+}
+
+.carouselTitle {
+	font-size: 64px;
+	font-weight: 100;
+	color: white;
+	text-shadow: 0 1px 2px #000;
+	position: absolute;
+}
+
+.main-intro-iles h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  text-decoration: overline;
+  margin-bottom: 2%;
+  font-size: 32px;
+}
+
+.main-intro-iles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* section coups de coeurs */
+
+.coeur-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+}
+
+.coeur-info h1{
+  text-transform: uppercase;
+}
+
+.coeur-container h2{
+  margin-top: 2%;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+  /* Budget */
+
+.budget-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+}
+
+.budget-info h1{
+  margin-bottom: 10%;
+}
+
+.budget-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.budget-text h3{
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+  /* Quand partir ? */
+
+.quand-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.quand-info h1{
+  margin-top: -10%;
+  margin-bottom: 5%;
+}
+
+.quand-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quand-info img{
+  width: 40%;
+}
+
+/* Logement  */
+
+.logement-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.logement-text{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logement-text h2{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.logement-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 85%;
+}
+
+/* Vidéo */
+
+.presentation-feroe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation-feroe h1{
+  margin-top: -15%;
+  margin-bottom: 10%;
+}
+
+/* Formulaire */
+
+#contact-form{
+  padding-top: 1%;
+  background-color: white;
+  height: 100vh;
+}
+
+#contact-form h1{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#form{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+#contactez-moi{
+  text-align: center;
+  margin-top: 3%;
+}
+
+#moi{
+  height: 20%;
+}
+
+.form-container{
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-label {
+  font-size: 12px;
+  color: #5e9bfc;
+  margin: 0;
+  display: block;
+  opacity: 1;
+  -webkit-transition: .333s ease top, .333s ease opacity;
+  transition: .333s ease top, .333s ease opacity;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: #ccc;
+  border-width: 0 0 2px 0;
+  border-style: none none solid none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #5e9bfc;
+}
+
+.js-hide-label {
+  opacity: 0;
+}
+
+.js-unhighlight-label {
+  color: #999
+}
+
+.btn-start-order {
+  background: 0 0 #ffffff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  color: #2f323a;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: inherit;
+  margin: 30px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+  border-color: #5e9bfc;
+  color: #5e9bfc;
+}
