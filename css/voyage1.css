@@ -349,6 +349,7 @@ i{
   margin-top: 3%;
   margin-left: 12%;
   margin-right: 12%;
+  height: 40vh;
 }
 
 #contactez-moi{
@@ -356,9 +357,6 @@ i{
   margin-top: 3%;
 }
 
-#moi{
-  height: 20%;
-}
 
 .form-container{
   width: 100%;
@@ -368,6 +366,7 @@ i{
   position: relative;
   animation: fox 30s infinite;
   animation-timing-function: linear;
+  margin-top: 10%;
 }
 
 @keyframes fox {

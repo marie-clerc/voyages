@@ -201,15 +201,12 @@ main{
   margin-top: 3%;
   margin-left: 12%;
   margin-right: 12%;
+  height: 40vh;
 }
 
 #contactez-moi{
   text-align: center;
   margin-top: 3%;
-}
-
-#moi{
-  height: 20%;
 }
 
 .form-container{
