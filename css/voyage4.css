@@ -50,33 +50,165 @@ body {
 .carousel img {
   object-fit: cover;
   object-position: bottom center;
-
 }
 
 
+/*animation des feuilles*/
+#fueilles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.set {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.set div {
+  display: block;
+  position: absolute;
+}
+.set div img {
+  width: 10%;
+}
+.set div:nth-child(1) {
+  left: 20%;
+  animation: animate 25s linear infinite;
+  animation-delay: -2s;
+}
+.set div:nth-child(2) {
+  left: 50%;
+  animation: animate 20s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(3) {
+  left: 70%;
+  animation: animate 20s linear infinite;
+  animation-delay: -4s;
+}
+.set div:nth-child(4) {
+  left: 0%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+.set div:nth-child(5) {
+  left: 85%;
+  animation: animate 18s linear infinite;
+  animation-delay: -10s;
+}
+.set div:nth-child(6) {
+  left: 0%;
+  animation: animate 12s linear infinite;
+  animation-delay: -9s;
+}
+.set div:nth-child(7) {
+  left: 15%;
+  animation: animate 14s linear infinite;
+  animation-delay: -8s;
+}
+.set div:nth-child(8) {
+  left: 60%;
+  animation: animate 15s linear infinite;
+  animation-delay: -4s;
+}
+@keyframes animate {
+  0% {
+      opacity: 0;
+      top: -10%;
+      transform: translateX(20px) rotate(0deg);
+  }
+  2% {
+      opacity: 1;
+  }
+  10% {
+      transform: translateX(20px) rotate(20deg);
+  }
+  20% {
+      transform: translateX(-20px) rotate(45deg);
+  }
+  40% {
+      transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+      transform: translateX(20px) rotate(180deg);
+  }
+  80% {
+      transform: translateX(-20px) rotate(180deg);
+  }
+  100% {
+      top: 110%;
+      transform: translateX(-20px) rotate(225deg);
+  }
+
+}
+.set2 {
+  transform: scale(1.3) rotateY(180deg);
+  filter: blur(1px);
+}
+.set3 {
+  transform: scale(0.5) rotateX(90deg);
+  filter: blur(1px);
+}
+
+
+
+
+#fondgeneral {
+  background-image: url("../images/coree/daechwita4.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+/*contenu*/
 #contenumain {
-    box-shadow: 0px 0px 19px 22px #F5F5F5;
-    display: grid;
-    place-items: center;
-    margin-top: 2em;
+  box-shadow: 0px 0px 19px 22px #F5F5F5;
+  display: grid;
+  place-items: center;
+  margin-top: 2em;
 }
 
 article {
   padding-top: 4em;
   padding-bottom: 2em;
   width: 70%;
+  background-color: #F5F5F5;
 }
 article h3 {
   text-align: center;
   margin-bottom: 4em;
+  display: table;
+  white-space: nowrap;
+}
+
+.h3:before, .h3:after {
+  content: "";
+  display: table-cell;
+  width: 50%;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=) repeat-x left center;
+}
+
+
+article h4 {
+  margin-top: 3em;
+  color: #8C1B50;
 }
 article p {
   width: 80%;
   text-align: justify;
   margin: auto;
+  margin-top: 3em;
 }
-
-
+article img {
+  width: 100%;
+  margin-top: 1em;
+}
+/*background avec les drapeau de corée*/
 #background1 {
   background-image: url("../images/coree/Flag_of_South_Korea.png");
   background-size: contain;
@@ -86,12 +218,7 @@ article p {
   padding-bottom: 2em;
 }
 
-
-figure {
-  display: grid;
-  place-items: center;
-}
-
+/*tableau de présentation des circuits*/
 table {
   table-layout: fixed;
   width: 100%;
@@ -122,6 +249,17 @@ table td {
 }
 #fond3 {
   background-image: url("../images/coree/tableau/3adong.jpg");
+}
+
+/*figure pour l'audio*/
+figure {
+  display: grid;
+  place-items: center;
+  padding-top: 2em;
+}
+
+article div iframe {
+  margin-top: 2em;
 }
 
 /*css formulaire*/
@@ -161,7 +299,7 @@ table td {
 }
 
 #formulaire button {
-    background: #ff3da8;
+    background: #BF0F3E;
     border: none;
     padding: 0 24px;
     border-radius: 5px;
