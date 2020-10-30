@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+/*Page Montréal*/
+
+/*partie du haut avec le background*/
+#mainmontreal {
+    cursor: context-menu;
+}
+#montreal {
+    background-image: url("../images/montreal/montrealBackground.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#itineraire {
+    font-family: courier;
+    height: 150vh;
+    color: rgb(240, 240, 240);
+    display: grid;
+    place-items: center;
+    position: relative; /*passe par-dessus les feuilles qui tombent*/
+}
+
+#itineraire h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 119px;
+}
+
+
+/*guirlande de fleurs*/
+.guirlande {
+    display: flex;
+    background-image: url("../images/montreal/montrealBackground.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+    height: 10vh;
+    width: 100%;
+}
+
+.guirlande img {
+    height: 10vh;
+    /*position: relative;*/
+}
+
+
+/*animation des feuilles*/
+#fueilles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.set {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.set div {
+    display: block;
+    position: absolute;
+}
+.set div:nth-child(1) {
+    left: 20%;
+    animation: animate 25s linear infinite;
+    animation-delay: -2s;
+}
+.set div:nth-child(2) {
+    left: 50%;
+    animation: animate 20s linear infinite;
+    animation-delay: -7s;
+}
+.set div:nth-child(3) {
+    left: 70%;
+    animation: animate 20s linear infinite;
+    animation-delay: -4s;
+}
+.set div:nth-child(4) {
+    left: 0%;
+    animation: animate 15s linear infinite;
+    animation-delay: -5s;
+}
+.set div:nth-child(5) {
+    left: 85%;
+    animation: animate 18s linear infinite;
+    animation-delay: -10s;
+}
+.set div:nth-child(6) {
+    left: 0%;
+    animation: animate 12s linear infinite;
+    animation-delay: -9s;
+}
+.set div:nth-child(7) {
+    left: 15%;
+    animation: animate 14s linear infinite;
+    animation-delay: -8s;
+}
+.set div:nth-child(8) {
+    left: 60%;
+    animation: animate 15s linear infinite;
+    animation-delay: -4s;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    2% {
+        opacity: 1;
+    }
+    10% {
+        transform: translateX(20px) rotate(20deg);
+    }
+    20% {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40% {
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60% {
+        transform: translateX(20px) rotate(180deg);
+    }
+    80% {
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100% {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+
+}
+.set2 {
+    transform: scale(1.3) rotateY(180deg);
+    filter: blur(3px);
+}
+
+
+
+
+
+/*Partie conenu avec les section, articles, ...*/
+#contenu {
+    position: relative; /*les feuilles passent derrière*/
+    
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.section {
+    display: grid;
+    place-items: center;
+    text-align: justify;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+article {
+    width: 80%;
+}
+.flex {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+}
+.flex p {
+    padding-left: 1em;
+}
+b {
+    color: #ff913d;
+}
+#pres p::first-letter, #places p::first-letter, #food p::first-letter {
+    color: #BF3604;
+    margin-right : 5px;
+    font-size: 3em;
+    font-family: 'Fredericka the Great', cursive;
+    line-height: 0;
+}
+.surlignage {
+    line-height: 0;
+    box-shadow: inset 0px -8px #ff913d;
+}
+#pres a, #places a, #food a {
+    color: currentColor;
+    text-decoration: underline;
+    transition: 0.4s ease;
+}
+#pres a:hover, #places a:hover, #food a:hover {
+    box-shadow: inset 0px -1em #ff913d; 
+}
+.titres {
+    width: 90%;
+}
+.titres h2 {
+    display: inline;
+    font-family: courier;
+    margin-bottom: 2em;
+}
+.titres h5 {
+    display: inline;
+}
+
+#places h3, #food h3 {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: right;
+}
+#places img, #food img {
+    max-width: 100%;
+    padding-bottom: 2px;
+}
+#places p, #food p {
+    margin-top: 2em;
+    width: 80%;
+}
+/*iframe place d'armes*/
+#plcarmes iframe {
+  width: 100%;
+  height: 90vh;
+}
+
+/*css formulaire*/
+#formulaire {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#formulaire form {
+    width: 35%;
+    border: rgba(255, 137, 46, 0.5) 1px solid;
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 40px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(240, 240, 240, 0.7);
+}
+#formulaire form div {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+#formulaire form div input, #formulaire form div select, #formulaire form div textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 137, 46, 0.5);
+    width: 100%;
+}
+
+#formulaire button {
+    background: #ff913d;
+    border: none;
+    padding: 0 24px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+#area {
+    width: 100%;
+    height: 5em;
+}
+
+#formulaire img {
+    width: 20%;
+    border-radius: 15px;
+}
+footer {
+    position: relative; /*l'animation pase derrière*/
+}
