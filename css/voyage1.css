@@ -90,10 +90,6 @@ li a{
   transition: all 0.3s ease 0.3s;
 }
 
-ul{
-  list-style: none;
-}
-
 li a:hover{
   color: #6dd9e2;
 }
@@ -125,8 +121,8 @@ li a:hover{
 #quand-text{
   padding-bottom: 1%;
   padding-top: 1%;
-  padding-right: 18%;
-  padding-left: 18%;
+  margin-right: 18%;
+  margin-left: 18%;
 }
 
 #aurore{
@@ -157,20 +153,28 @@ i{
   font-size: 26px;
 }
 
-#transport-avion{
-  background-image: linear-gradient(to right bottom, #96bcc8, #b4cbd9, #d1dbe7, #eaecf3, #ffffff);
+.avion-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-#map{
+.avion-container iframe{
+  margin-top: 8%;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  width: 600px;
+  width: 800px;
   height: 450px;
 }
 
-#map:hover{
+#transport-avion{
+  background-image: linear-gradient(to right bottom, #96bcc8, #b4cbd9, #d1dbe7, #eaecf3, #ffffff);
+}
+
+.avion-container iframe:hover{
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
