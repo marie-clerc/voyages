@@ -24,8 +24,23 @@ body {
 
 .carousel-caption {
   position: absolute;
+}
+
+.carousel-caption h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.carousel-caption span {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.carousel-caption h3 {
   background: rgba(0,0,0,0.4);
   padding: 15px 10px;
+  color: white;
+  margin-top: 15em;
 }
 
 .carousel-control-prev,
@@ -38,19 +53,36 @@ body {
 
 }
 
-/*
-section {
-    background-color: #F5F5F5;
+
+#contenumain {
     box-shadow: 0px 0px 19px 22px #F5F5F5;
     display: grid;
-    width: 70%;
-}*/
+    place-items: center;
+    margin-top: 2em;
+}
 
-.section {
-  display: grid;
-  place-items: center;
-  text-align: justify;
+article {
   padding-top: 4em;
+  padding-bottom: 2em;
+  width: 70%;
+}
+article h3 {
+  text-align: center;
+  margin-bottom: 4em;
+}
+article p {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+
+
+#background1 {
+  background-image: url("../images/coree/Flag_of_South_Korea.png");
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  padding-top: 2em;
   padding-bottom: 2em;
 }
 
@@ -60,7 +92,46 @@ figure {
   place-items: center;
 }
 
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+table tr:hover {
+  background-color: rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+table td {
+  border: rgb(143, 100, 100) solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+.titrevoyage {
+  background-size: cover;
+  background-position: bottom;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  height: 10em;
+  font-size: 25px;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+#fond1 {
+  background-image: url("../images/coree/tableau/1Printemps-a-Séoul-Corée-du-Sud.jpg");
+}
+#fond2 {
+  background-image: url("../images/coree/tableau/2gamcheon-culture-village-busan-coree-du-sud.jpg");
+}
+#fond3 {
+  background-image: url("../images/coree/tableau/3adong.jpg");
+}
+
 /*css formulaire*/
+.section {
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
 #formulaire {
     display: flex;
     justify-content: space-around;
