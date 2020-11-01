@@ -1,5 +1,5 @@
-@font-face {font-family: HVD_Bodedo;src: url(../font/HVD_Bodedo.ttf);}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {font-family: HVD_Bodedo;src: url(../font/HVD_Bodedo.ttf);}
 
 *{
   margin: 0;
@@ -51,7 +51,6 @@ body{
 }
 
 #iceberg{
-  padding-top: -3%;
   height: 30%;
   animation-timing-function: linear;
   position: relative;
